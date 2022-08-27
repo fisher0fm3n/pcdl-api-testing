@@ -15,13 +15,15 @@
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      'albumId': 'fd5638db0d9d09c331e15020bd32313d'
+      email: 'deszeytutorials@gmail.com',
+      token: 'd6e9607750e750058a3342f8b2de1beb',
+      group:'all_categories',
     }),
   };
 
   const fetchData = async () => {
       const response = await fetch(
-        'https://api.pastorchrisdigitallibrary.org/getsinglealbum',
+        'https://api.pastorchrisdigitallibrary.org/getcategories',
         requestOptions,
       );
       const data = await response.json();
